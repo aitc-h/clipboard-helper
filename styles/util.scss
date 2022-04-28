@@ -1,0 +1,60 @@
+@import './vars.scss';
+
+.f {
+    display: flex;
+
+    &col {
+        flex-direction: column;
+    }
+
+    &grow {
+        flex-grow: 1;
+    }
+
+    &jcc {
+        justify-content: center;
+    }
+}
+
+.m {
+    &b {
+        margin-bottom: 1em;
+    }
+
+    &t {
+        margin-top: 1em;
+    }
+}
+
+.pad-y {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    &-sm {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.pad-x {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.w {
+    &50 {
+        width: 50%;
+    }
+
+    &100 {
+        width: 100%;
+    }
+}
+
+.mw-50 {
+    width: 20em;
+}
+
+.rbr {
+    border-bottom-right-radius: $rounding;
+}

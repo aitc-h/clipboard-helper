@@ -1,0 +1,139 @@
+@import './vars.scss';
+
+.title {
+    margin: 0;
+    height: 2em;
+    line-height: 2em;
+    font-size: 2rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+.btn {
+    background-color: #fff;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    // cursor: pointer;
+    // transition: background-color 1s;
+
+    // &:active {
+    //   background-color: #00ff0044;
+    // }
+}
+
+form {
+    margin-block-end: 0;
+}
+
+.bhl {
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: $rounding;
+    padding: 0.5em;
+
+    & * {
+        border-collapse: collapse;
+    }
+}
+
+.fig {
+    flex-grow: 1;
+    display: flex;
+
+    .btn.fi {
+        &:active {
+            transition: background-color 0.02s ease-in-out;
+            background-color: #00ff0044;
+        }
+    }
+
+    .fi {
+        background-color: inherit;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 4px;
+        padding-bottom: 4px;
+
+        font-family: inherit;
+        font-size: inherit;
+        line-height: 1.5em;
+
+        &:hover {
+            transition: background-color 0.2s ease-in-out;
+            background-color: #ccc;
+        }
+
+        &:first-child {
+            border-top-left-radius: $rounding;
+            border-bottom-left-radius: $rounding;
+        }
+
+        &:not(:first-child) {
+            border-left-width: 0;
+        }
+
+        &:last-child {
+            border-top-right-radius: $rounding;
+            border-bottom-right-radius: $rounding;
+        }
+    }
+}
+
+.figcol>.fig {
+    &:not(:first-child)>* {
+        border-top-width: 0;
+
+        &:first-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        &:last-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    &:first-child {
+        > :first-child {
+            border-bottom-left-radius: 0;
+        }
+
+        > :last-child {
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    &:last-child {
+        > :first-child {
+            border-bottom-left-radius: $rounding;
+        }
+
+        > :last-child {
+            border-bottom-right-radius: $rounding;
+        }
+    }
+}
+
+input[type='file'] {
+    // display: none;
+    width: 0;
+    height: 0;
+}
