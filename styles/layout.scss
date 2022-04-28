@@ -6,7 +6,8 @@
 }
 
 .content {
-    flex: 1;
+    flex-grow: 1;
+    flex-basis: auto;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +15,10 @@
 .footer {
     $footer-height: 3em;
     min-height: $footer-height;
+    max-height: $footer-height;
+    height: $footer-height;
     line-height: $footer-height;
+
     border-top: 1px solid #eaeaea;
     display: flex;
     justify-content: center;
