@@ -1,0 +1,48 @@
+$button-background: rgb(239, 239, 239);
+$button-bg-active: #00ff0044;
+
+.button {
+  padding-top: 0.25em;
+  padding-left: 0.5em;
+  padding-bottom: 0.25em;
+  padding-right: 0.5em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5em;
+
+  text-align: center;
+}
+
+.active {
+  background-color: $button-bg-active;
+}
+
+.bg-r.active {
+  background-color: #ff000044;
+}
+.bg-o.active {
+  background-color: #ff770044;
+}
+.bg-y.active {
+  background-color: #ffff0044;
+}
+.bg-g.active {
+  background-color: #00ff0044;
+}
+.bg-b.active {
+  background-color: #00ffff44;
+}
+.bg-i.active {
+  background-color: #0077ff44;
+}
+.bg-v.active {
+  background-color: #0000ff44;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

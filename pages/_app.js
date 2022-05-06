@@ -1,14 +1,16 @@
-import Layout from "../components/Layout";
-import "../styles/globals.scss";
-import "../styles/layout.scss";
-import "../styles/util.scss";
-import "../styles/elements.scss";
+import Head from 'next/head';
+import { StrictMode } from 'react';
+import 'styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <StrictMode>
+      <Head>
+        <title>Clipboard Helper</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Component {...pageProps} />
-    </Layout>
+    </StrictMode>
   );
 }
 

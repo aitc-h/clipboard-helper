@@ -1,5 +1,7 @@
-const NavBar = () => (
-  <div className="footer">
+import styles from 'styles/Footer.module.scss';
+
+const Footer = () => (
+  <div className={`footer ${styles.footer}`}>
     <span>
       <a href="https://github.com/aitc-h" target="_BLANK">
         Created by Harry Penlington
@@ -8,4 +10,4 @@ const NavBar = () => (
   </div>
 );
 
-export default NavBar;
+export default Footer;

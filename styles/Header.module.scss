@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0.5rem;
+
+  * {
+    align-self: center;
+  }
+
+  * > :not(:last-child) {
+    margin-right: 0.5em;
+  }
+}
+
+.left {
+  margin-right: auto;
+  display: flex;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.brand {
+  font-size: large;
+  font-weight: 600;
+}

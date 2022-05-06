@@ -1,8 +1,12 @@
+import Page from 'components/Page';
+
 const Settings = () => {
   return (
-    <div className="container">
-      <h1>Settings</h1>
-    </div>
+    <Page>
+      <Page.Content>
+        <Page.Title>Settings</Page.Title>
+      </Page.Content>
+    </Page>
   );
 };
 

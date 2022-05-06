@@ -10,3 +10,18 @@ body {
 * {
   box-sizing: border-box;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+input[type='file'] {
+  display: none;
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,9 @@
+.footer {
+  $footer-height: 3em;
+  min-height: $footer-height;
+  line-height: $footer-height;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
