@@ -1,4 +1,4 @@
-import { db } from "db";
+import db from "db";
 
 const downloadJSON = (object, filename) => {
   const blob = new Blob([JSON.stringify(object)], { type: "application/json" });
