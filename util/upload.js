@@ -1,3 +1,5 @@
+import db from "db";
+
 const onUpload = async (event, router) => {
   const data = await event.target.files[0]
     .text()
