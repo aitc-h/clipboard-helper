@@ -17,7 +17,7 @@
       "icons": [
         {
           "src": "/icon.svg",
-          "sizes": "256x256"
+          "sizes": "512x512"
         }
       ]
     }
@@ -26,7 +26,7 @@
     {
       "src": "/icon.svg",
       "type": "image/svg+xml",
-      "sizes": "256x256"
+      "sizes": "512x512"
     }
   ]
 }
