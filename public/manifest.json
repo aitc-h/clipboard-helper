@@ -10,8 +10,8 @@
   "theme_color": "#363636",
   "shortcuts": [
     {
-      "name": "CH - Lists",
-      "short_name": "Clipboard Helper - Lists",
+      "name": "Clipboard Helper - Lists",
+      "short_name": "CH - Lists",
       "description": "Clipboard Helper - Lists",
       "url": "/?source=pwa",
       "icons": [
