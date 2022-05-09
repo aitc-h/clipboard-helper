@@ -1,8 +1,24 @@
 import Head from "next/head";
-import { StrictMode } from "react";
+import { StrictMode, useEffect } from "react";
 import "styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/serviceWorker.js").then(
+          function (registration) {
+            console.log(
+              `[Service Worker] Registration Successful with scope: ${registration.scope}`
+            );
+          },
+          function (err) {
+            console.log(`[Service Worker] Registration Failed:`, err);
+          }
+        );
+      });
+    }
+  });
   return (
     <StrictMode>
       <Head>
