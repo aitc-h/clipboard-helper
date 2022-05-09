@@ -1,0 +1,32 @@
+{
+  "short_name": "Clipboard Helper",
+  "name": "Clipboard Helper",
+  "description": "Clipboard Helper",
+  "start_url": "/?source=pwa",
+  "id": "/?source=pwa",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#363636",
+  "shortcuts": [
+    {
+      "name": "CH - Lists",
+      "short_name": "Clipboard Helper - Lists",
+      "description": "Clipboard Helper - Lists",
+      "url": "/?source=pwa",
+      "icons": [
+        {
+          "src": "/icon.svg",
+          "sizes": "256x256"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "256x256"
+    }
+  ]
+}
