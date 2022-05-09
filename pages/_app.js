@@ -8,12 +8,12 @@ function MyApp({ Component, pageProps }) {
       window.addEventListener("load", function () {
         navigator.serviceWorker.register("/serviceWorker.js").then(
           function (registration) {
-            console.log(
+            console.info(
               `[Service Worker] Registration Successful with scope: ${registration.scope}`
             );
           },
           function (err) {
-            console.log(`[Service Worker] Registration Failed:`, err);
+            console.warn(`[Service Worker] Registration Failed:`, err);
           }
         );
       });
