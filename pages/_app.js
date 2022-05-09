@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import { StrictMode } from 'react';
-import 'styles/globals.scss';
+import Head from "next/head";
+import { StrictMode } from "react";
+import "styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
     <StrictMode>
       <Head>
         <title>Clipboard Helper</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" />
       </Head>
       <Component {...pageProps} />
     </StrictMode>
