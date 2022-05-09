@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Clipboard Helper</title>
         <link rel="icon" href="/icon.svg" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <Component {...pageProps} />
     </StrictMode>
